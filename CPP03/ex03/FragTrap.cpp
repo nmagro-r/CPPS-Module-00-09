@@ -28,7 +28,7 @@ FragTrap::FragTrap(std::string name): ClapTrap(name)
     std::cout << "FragTrap " << name <<  " has appeared" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &copy)
+FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy)
 {
     hitPoints = copy.hitPoints;
     energyPoints = copy.energyPoints;

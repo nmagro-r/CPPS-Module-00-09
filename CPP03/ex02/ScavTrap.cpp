@@ -33,7 +33,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     std::cout << "ScavTrap " << name << " arrives!" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &copy)
+ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 {
     std::cout << "Copy constructor called in Scavtrap" << std::endl;
     name = copy.name;

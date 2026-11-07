@@ -17,7 +17,7 @@ Cat::Cat() : Animal("Cat")
     std::cout << "Default cat constructor" << std::endl;
 }
 
-Cat::Cat(const Cat &copy)
+Cat::Cat(const Cat &copy) : Animal(copy)
 {
     this->type = copy.type;
     *this = copy;
